@@ -8,7 +8,13 @@ const sequelize = new Sequelize(
         host: 'pgsql01-farm2.uni5.net',
         dialect: 'postgres',
         quoteIdentifiers: false,
-        operatorsAliases: false
+        operatorsAliases: false,
+        dialectOptions:{
+            ssl: {
+                require: true,
+                rejectUnauthorized: false
+            }
+        }
     }
 );
 
