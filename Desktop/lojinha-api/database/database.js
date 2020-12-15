@@ -1,15 +1,15 @@
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize(
-    'lojinha',
-    'postgress',
-    '1234',
+    'helpdesck',
+    'helpdesck',
+    'Abacate123',
     {
-        host: 'localhost',
+        host: 'pgsql01-farm2.uni5.net',
         dialect: 'postgres',
         quoteIdentifiers: false,
         operatorsAliases: false
     }
 );
 
-modedule.exports = sequelize;
+module.exports = sequelize;
